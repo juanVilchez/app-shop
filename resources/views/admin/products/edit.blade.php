@@ -46,6 +46,19 @@
                         <input type="number" class="form-control" name="stock" value="{{ old('stock', $product->stock) }}">
                         </div>
                     </div>
+
+                    <div class="col-sm-6">
+                        <div class="form-group label-floating">
+                            <label class="control-label">Categoría</label>
+                            <select class="form-control" name="category_id">
+                                <option value="0">General</option>
+                                @foreach($categories as $category)
+                                <option value="{{$category->id}}" @if($category->id == old('category_id',$product->category_id)) selected @endif>{{$category->name}}</option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="row">

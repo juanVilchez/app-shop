@@ -20,11 +20,12 @@
                     <div class="name">
                         <h3 class="title">{{$product->name}}</h3>
                         <h6>{{$product->category->name}}</h6>
+                        <strong>S/.{{$product->price}}</strong>
                     </div>
 
                     @if (session('notification'))
                         <div class="alert alert-success">
-                                   {{ session('notification') }}
+                            {{ session('notification') }}
                         </div>
                     @endif
 
