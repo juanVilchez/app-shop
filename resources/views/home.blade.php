@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Bienvenido a Shop Sports Radical')
+@section('title', 'Bienvenido a Shop Radical')
 
 @section('body-class','product-page')
 
@@ -79,6 +79,7 @@
                     @endforeach
                 </tbody>
             </table>
+            <p><strong>Importe a pagar</strong></p> {{auth()->user()->cart->total}}
             <div class="text-center" >
                 <form method="post" action="{{url('/order')}}">
                     {{csrf_field()}}
