@@ -59,7 +59,7 @@ class ProductController extends Controller
     public function edit($id)
     {
     	//return "Mostrar aqui con id $id";
-        $categories = category::orderBy('name')->get();
+        $categories = Category::orderBy('name')->get();
     	$product = Product::find($id);
     	return view('admin.products.edit')->with(compact('product','categories'));;
     }
