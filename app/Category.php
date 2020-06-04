@@ -2,11 +2,15 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Model;
 use App\Category;
 
 class Category extends Model
 {
+
+    use SoftDeletes;
+
 	public static $messages = [
         'name.required' => 'Ingrese una categoría',
         'name.min' => 'El nombre de la categoría debe tener al menos 3 caracteres',
