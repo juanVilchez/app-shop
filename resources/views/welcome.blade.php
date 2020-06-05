@@ -204,11 +204,6 @@
                             </div>
                         </div>
 
-                        <div class="form-group label-floating">
-                            <label class="control-label">Tu mensaje</label>
-                            <textarea class="form-control" rows="4"></textarea>
-                        </div>
-
                         <div class="row">
                             <div class="col-md-4 col-md-offset-4 text-center">
                                 <button class="btn btn-primary btn-raised">

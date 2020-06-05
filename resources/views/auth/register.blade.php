@@ -45,6 +45,20 @@
 
                             <div class="input-group">
                                 <span class="input-group-addon">
+                                    <i class="material-icons">phone</i>
+                                </span>
+                                <input id="phone" type="phone" placeholder="Teléfono" class="form-control" name="phone" value="{{ old('phone') }}">
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="material-icons">class</i>
+                                </span>
+                                <input id="address" type="text" placeholder="Dirección" class="form-control" name="address" value="{{ old('address') }}">
+                            </div>
+
+                            <div class="input-group">
+                                <span class="input-group-addon">
                                     <i class="material-icons">lock_outline</i>
                                 </span>
                                 <input placeholder="Contraseña" id="password" type="password" class="form-control" name="password" required />
